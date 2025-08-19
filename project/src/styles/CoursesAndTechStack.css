@@ -1,0 +1,156 @@
+.courses-tech-stack {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certifications-section, .tech-stack-section {
+  margin-bottom: 3rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certification-card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.cert-name {
+  color: #ec4899;
+  font-size: 1.2rem;
+  font-weight: 600;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.cert-date {
+  background: rgba(236, 72, 153, 0.2);
+  color: #ec4899;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cert-issuer {
+  color: #9ca3af;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cert-description {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.tech-category {
+  margin-bottom: 2.5rem;
+}
+
+.category-title {
+  color: #ec4899;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.tech-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.tech-item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tech-item-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.tech-logo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-name {
+  font-weight: 600;
+  color: #ec4899;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .courses-tech-stack {
+    padding: 1rem;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cert-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .cert-name {
+    margin-right: 0;
+  }
+  
+  .tech-items {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  
+  .tech-item-card {
+    padding: 1rem;
+  }
+  
+  .tech-logo {
+    font-size: 2rem;
+  }
+}
