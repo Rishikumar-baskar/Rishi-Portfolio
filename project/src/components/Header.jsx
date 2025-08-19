@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Header.css';
+import logo from "../Assets/Rishi.jpg";
+
 
 const Header = () => {
   return (
@@ -7,7 +9,7 @@ const Header = () => {
       <div className="header-content">
         <div className="avatar-container">
           <img 
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop&crop=face"
+            src={logo}
             alt="Rishi Kumar"
             className="avatar"
           />
