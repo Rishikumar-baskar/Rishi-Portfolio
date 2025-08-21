@@ -20,9 +20,9 @@ const Home = () => {
       technologies: 'HTML, CSS, JavaScript'
     },
     {
-      name: 'QVC Mobile Application',
+      name: 'QFC Mobile Application',
       description: 'Mobile application for a finance insurance company in Qatar',
-      technologies: 'Kony Visualizer'
+      technologies: 'Kony Visualizer,Javascript'
     },
     {
       name: 'ShopperStop (eCommerce Website)',
@@ -50,11 +50,11 @@ const Home = () => {
             <div className="experience-grid">
               <div className="experience-item">
                 <h4>Experience</h4>
-                <p>3+ years as a developer</p>
+                <p>2+ years as a developer</p>
               </div>
               <div className="experience-item">
                 <h4>Education</h4>
-                <p>Computer Science Graduate with excellent academic performance</p>
+                <p>Electrical & Electronics Graduate with excellent academic performance</p>
               </div>
               <div className="experience-item">
                 <h4>Specialization</h4>
