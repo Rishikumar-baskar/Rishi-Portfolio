@@ -7,25 +7,29 @@ const CoursesAndTechStack = () => {
       name: 'Responsive Web Design using HTML5 + CSS3',
       issuer: 'UDEMY',
       date: 'UC-84de786e-21d6-473c-bad4-76aa0794e9c6',
-      description: 'Comprehensive course on responsive web design principles and implementation'
+      description: 'Comprehensive course on responsive web design principles and implementation',
+      certificateUrl: 'https://www.udemy.com/certificate/UC-84de786e-21d6-473c-bad4-76aa0794e9c6/'
     },
     {
       name: 'Javascript Basic for beginners',
       issuer: 'UDEMY',
       date: 'UC-5b063564-67dc-4a54-89cc-afb9c912d1a6',
-      description: 'Fundamental JavaScript concepts and programming basics'
+      description: 'Fundamental JavaScript concepts and programming basics',
+      certificateUrl: 'https://www.udemy.com/certificate/UC-5b063564-67dc-4a54-89cc-afb9c912d1a6/'
     },
     {
       name: 'Basics of Chrome developer tools',
       issuer: 'UDEMY',
       date: 'UC-3ddbccae-7288-456e-b7ec-1028c7a45f85',
-      description: 'Mastery of Chrome DevTools for debugging and development'
+      description: 'Mastery of Chrome DevTools for debugging and development',
+      certificateUrl: 'https://www.udemy.com/certificate/UC-3ddbccae-7288-456e-b7ec-1028c7a45f85/'
     },
     {
       name: 'Plan and Execute better Software',
       issuer: 'UDEMY',
       date: 'UC-7155ef89-7072-4f08-a60c-39a023e68b89',
-      description: 'Software planning and execution methodologies'
+      description: 'Software planning and execution methodologies',
+      certificateUrl: 'https://www.udemy.com/certificate/UC-7155ef89-7072-4f08-a60c-39a023e68b89/'
     },
     {
       name: 'Mern Stack(Full Stack)',
@@ -49,6 +53,7 @@ const CoursesAndTechStack = () => {
     { name: 'SQL', logo: '🗄️', category: 'Database' },
     { name: 'Visual Studio Code', logo: '💻', category: 'Development Tools' },
     { name: 'Visual Studio', logo: '🖥️', category: 'Development Tools' },
+    { name: 'Cursor', logo: '🎯', category: 'Development Tools' },
     { name: 'Git', logo: '📁', category: 'Version Control' },
     { name: 'GitHub', logo: '🐱', category: 'Version Control' },
     { name: 'Figma', logo: '🎨', category: 'Design Tools' },
@@ -79,11 +84,29 @@ const CoursesAndTechStack = () => {
             {certifications.map((cert, index) => (
               <div key={index} className="certification-card">
                 <div className="cert-header">
-                  <h4 className="cert-name">{cert.name}</h4>
+                  <h4 className="cert-name">
+                    {cert.certificateUrl ? (
+                      <a 
+                        href={cert.certificateUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="cert-link"
+                      >
+                        {cert.name} 🔗
+                      </a>
+                    ) : (
+                      cert.name
+                    )}
+                  </h4>
                   <span className="cert-date">{cert.date}</span>
                 </div>
                 <p className="cert-issuer">{cert.issuer}</p>
                 <p className="cert-description">{cert.description}</p>
+                {cert.certificateUrl && (
+                  <p className="cert-note">
+                    <small>Click the certificate name to view online</small>
+                  </p>
+                )}
               </div>
             ))}
           </div>

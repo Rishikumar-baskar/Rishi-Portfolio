@@ -27,6 +27,7 @@ const About = () => {
   const additionalTech = [
     'Visual Studio Code',
     'Visual Studio',
+    'Cursor',
     'Git',
     'GitHub',
     'Figma',

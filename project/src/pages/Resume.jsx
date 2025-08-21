@@ -120,7 +120,7 @@ ${formData.description}
                 <h4>ShoppersStop</h4>
                 <span className="experience-duration">May 2025 - Present</span>
               </div>
-              <p className="company-name">ShoppersStop, Chennai</p>
+              <p className="company-name">Personal Project, Chennai</p>
               <ul className="experience-details">
                 <li>Developed a Personal e-commerce website using the MERN stack (MongoDB, Express.js, React.js, Node.js), featuring a responsive product catalog, shopping cart, secure checkout, and an admin dashboard for managing products and orders.</li>
                 <li>Designed and built responsive UI components with React.js leveraging React Hooks (useState, useEffect, useContext etc..) for state management, data fetching, and improved component reusability.</li>
@@ -197,6 +197,7 @@ ${formData.description}
                 <ul>
                   <li>Visual Studio Code</li>
                   <li>Visual Studio</li>
+                  <li>Cursor</li>
                   <li>Git</li>
                   <li>GitHub</li>
                   <li>Figma</li>

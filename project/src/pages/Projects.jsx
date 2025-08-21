@@ -57,7 +57,7 @@ const Projects = () => {
       ],
       status: 'In Progress (70% Complete)',
       type: 'Full Stack Web Application',
-      company: 'ShoppersStop',
+      company: 'Personal Project',
       duration: 'May 2025 - Present',
       deployment: 'Final deployment in progress',
       versionControl: 'Git & GitHub'
