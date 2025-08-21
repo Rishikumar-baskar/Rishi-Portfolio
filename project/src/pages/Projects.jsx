@@ -4,59 +4,72 @@ import '../styles/Projects.css';
 const Projects = () => {
   const projects = [
     {
-      name: 'NXT Project',
-      description: 'API management and documentation platform similar to Postman. This comprehensive tool allows developers to create, test, and document APIs efficiently with an intuitive user interface.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      name: 'NXT Platform',
+      description: 'A robust solution for API validation, performance assessment, and debugging, enabling developers to analyze API interactions, monitor response times, and ensure seamless integration with multiple services.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'AJAX'],
       features: [
-        'API endpoint testing',
-        'Request/Response documentation',
-        'User-friendly interface',
-        'Real-time API monitoring'
+        'Enhanced UI responsiveness with interactive components',
+        'Dynamic features (animations, modals, tooltips, carousels) with jQuery',
+        'Real-time data fetching with AJAX (30% load interruption reduction)',
+        'Seamless API integration with backend teams',
+        'Custom jQuery plugins for standardized UI features',
+        'Cross-browser compatibility and mobile responsiveness',
+        'UI bugs resolution using Chrome DevTools'
       ],
       status: 'Completed',
-      type: 'Web Application'
+      type: 'Web Application',
+      company: 'Redcaso Solutions',
+      duration: 'May 2023 - Present',
+      location: 'Chennai'
     },
     {
-      name: 'QVC Mobile Application',
-      description: 'Mobile application developed for a finance insurance company in Qatar. The app provides comprehensive insurance management services with a focus on user experience and security.',
-      technologies: ['Kony Visualizer'],
+      name: 'QFC Client',
+      description: 'A secure, user-friendly digital banking application frontend built using Kony Visualizer and JavaScript, delivering seamless banking experiences across Android, iOS, and Web platforms.',
+      technologies: ['Kony Visualizer', 'JavaScript', 'Kony Fabric'],
       features: [
-        'Insurance policy management',
-        'Claims processing',
-        'Customer dashboard',
-        'Secure payment integration',
-        'Multi-language support'
+        'Responsive UI screens for core banking features',
+        'Custom widgets and reusable UI components',
+        'Event-driven interactions with JavaScript and Kony Fabric',
+        'Cross-platform compatibility (Android, iOS, Web)',
+        'Banking security regulations compliance',
+        'Accessibility standards implementation'
       ],
       status: 'Deployed',
-      type: 'Mobile Application'
+      type: 'Mobile Application',
+      company: 'Redcaso Solutions',
+      duration: 'Apr 2024 - Present',
+      location: 'Chennai'
     },
     {
-      name: 'ShopperStop (eCommerce Website)',
-      description: 'Full-stack eCommerce platform built with MERN stack. Features modern UI/UX design, secure payment processing, and comprehensive product management system.',
-      technologies: ['MongoDB', 'Express.js', 'React JS', 'Node.js', 'Bootstrap', 'Stripe'],
+      name: 'ShoppersStop',
+      description: 'Personal e-commerce website using MERN stack featuring responsive product catalog, shopping cart, secure checkout, and admin dashboard for managing products and orders.',
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT', 'Bcrypt', 'HTML5', 'CSS', 'JavaScript', 'Stripe/PayPal', 'Git', 'GitHub', 'Postman'],
       features: [
-        'Product catalog with search and filters',
-        'Shopping cart and wishlist',
-        'Secure Stripe payment integration',
-        'User authentication and profiles',
-        'Order tracking and management',
-        'Admin dashboard for inventory',
-        'Responsive design with Bootstrap',
-        'RESTful API architecture'
+        'Responsive product catalog with search and filters',
+        'Shopping cart and secure checkout with Stripe/PayPal',
+        'User authentication and profiles with JWT',
+        'Admin dashboard for product and order management',
+        'Product search and filter with Redux state management',
+        'Interactive price slider and real-time notifications',
+        'RESTful APIs for product management and authentication',
+        'Optimized database queries in MongoDB',
+        'Pagination and performance optimization'
       ],
-      status: 'Almost Complete',
+      status: 'In Progress (70% Complete)',
       type: 'Full Stack Web Application',
-      deployment: 'Netlify',
+      company: 'ShoppersStop',
+      duration: 'May 2025 - Present',
+      deployment: 'Final deployment in progress',
       versionControl: 'Git & GitHub'
     }
   ];
 
   const getStatusColor = (status) => {
     switch (status) {
-      case 'Completed': return '#ec4899';
-      case 'Deployed': return '#f472b6';
-      case 'Almost Complete': return '#f9a8d4';
-      default: return '#fce7f3';
+      case 'Completed': return '#3b82f6';
+      case 'Deployed': return '#60a5fa';
+      case 'In Progress (70% Complete)': return '#93c5fd';
+      default: return '#dbeafe';
     }
   };
 
@@ -66,7 +79,7 @@ const Projects = () => {
         <div className="glass-card">
           <h2 className="page-title">My Projects</h2>
           <p className="page-description">
-            A showcase of my development work, ranging from API management tools to full-stack eCommerce platforms.
+            A showcase of my development work at Redcaso Solutions and ShoppersStop, ranging from API management tools to full-stack eCommerce platforms.
           </p>
         </div>
       </section>
@@ -107,14 +120,17 @@ const Projects = () => {
               </ul>
             </div>
 
-            {project.deployment && (
-              <div className="deployment-info">
-                <p><strong>Deployed on:</strong> {project.deployment}</p>
-                {project.versionControl && (
-                  <p><strong>Version Control:</strong> {project.versionControl}</p>
-                )}
-              </div>
-            )}
+            <div className="deployment-info">
+              <p><strong>Company:</strong> {project.company}</p>
+              <p><strong>Duration:</strong> {project.duration}</p>
+              <p><strong>Location:</strong> {project.location}</p>
+              {project.deployment && (
+                <p><strong>Deployment:</strong> {project.deployment}</p>
+              )}
+              {project.versionControl && (
+                <p><strong>Version Control:</strong> {project.versionControl}</p>
+              )}
+            </div>
           </div>
         ))}
       </section>
@@ -125,19 +141,27 @@ const Projects = () => {
           <div className="skills-grid">
             <div className="skill-area">
               <h4>Frontend Development</h4>
-              <p>React.js, HTML5, CSS3, JavaScript ES6+, Bootstrap, Responsive Design</p>
+              <p>React.js, HTML5, CSS3, JavaScript, TypeScript, jQuery, Bootstrap, Responsive Design</p>
             </div>
             <div className="skill-area">
               <h4>Backend Development</h4>
-              <p>Node.js, Express.js, RESTful APIs, Database Design</p>
+              <p>Node.js, Express.js, RESTful APIs, JWT Authentication, Bcrypt</p>
             </div>
             <div className="skill-area">
               <h4>Database Management</h4>
               <p>MongoDB, SQL, Data Modeling, Query Optimization</p>
             </div>
             <div className="skill-area">
-              <h4>DevOps & Deployment</h4>
-              <p>Git, GitHub, Netlify, Version Control, CI/CD</p>
+              <h4>Mobile Development</h4>
+              <p>Kony Visualizer, Cross-platform Development, Banking Applications</p>
+            </div>
+            <div className="skill-area">
+              <h4>DevOps & Tools</h4>
+              <p>Git, GitHub, Postman, Chrome DevTools, Figma, Bolt AI, Lovable</p>
+            </div>
+            <div className="skill-area">
+              <h4>Payment Integration</h4>
+              <p>Stripe, PayPal, Secure Checkout, E-commerce Solutions</p>
             </div>
           </div>
         </div>

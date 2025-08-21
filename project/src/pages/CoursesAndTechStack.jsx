@@ -4,62 +4,62 @@ import '../styles/CoursesAndTechStack.css';
 const CoursesAndTechStack = () => {
   const certifications = [
     {
-      name: 'Full Stack Web Development Bootcamp',
-      issuer: 'Tech Institute',
+      name: 'Responsive Web Design using HTML5 + CSS3',
+      issuer: 'UDEMY',
+      date: 'UC-84de786e-21d6-473c-bad4-76aa0794e9c6',
+      description: 'Comprehensive course on responsive web design principles and implementation'
+    },
+    {
+      name: 'Javascript Basic for beginners',
+      issuer: 'UDEMY',
+      date: 'UC-5b063564-67dc-4a54-89cc-afb9c912d1a6',
+      description: 'Fundamental JavaScript concepts and programming basics'
+    },
+    {
+      name: 'Basics of Chrome developer tools',
+      issuer: 'UDEMY',
+      date: 'UC-3ddbccae-7288-456e-b7ec-1028c7a45f85',
+      description: 'Mastery of Chrome DevTools for debugging and development'
+    },
+    {
+      name: 'Plan and Execute better Software',
+      issuer: 'UDEMY',
+      date: 'UC-7155ef89-7072-4f08-a60c-39a023e68b89',
+      description: 'Software planning and execution methodologies'
+    },
+    {
+      name: 'Mern Stack(Full Stack)',
+      issuer: 'Green Technologies',
       date: '2023',
-      description: 'Comprehensive program covering MERN stack development'
-    },
-    {
-      name: 'React.js Advanced Certification',
-      issuer: 'React Academy',
-      date: '2023',
-      description: 'Advanced React patterns, hooks, and state management'
-    },
-    {
-      name: 'JavaScript ES6+ Mastery',
-      issuer: 'JavaScript Institute',
-      date: '2022',
-      description: 'Modern JavaScript features and best practices'
-    },
-    {
-      name: 'Node.js Backend Development',
-      issuer: 'Backend Masters',
-      date: '2022',
-      description: 'Server-side development with Node.js and Express'
-    },
-    {
-      name: 'MongoDB Database Certification',
-      issuer: 'MongoDB University',
-      date: '2022',
-      description: 'NoSQL database design and optimization'
-    },
-    {
-      name: 'Git & GitHub Professional',
-      issuer: 'Version Control Academy',
-      date: '2021',
-      description: 'Advanced version control and collaboration workflows'
+      description: 'Complete MERN stack development certification'
     }
   ];
 
   const techStackWithLogos = [
-    { name: 'HTML5', logo: '🌐', category: 'Frontend' },
-    { name: 'CSS3', logo: '🎨', category: 'Frontend' },
+    { name: 'HTML', logo: '🌐', category: 'Frontend' },
+    { name: 'CSS', logo: '🎨', category: 'Frontend' },
     { name: 'JavaScript', logo: '⚡', category: 'Frontend' },
-    { name: 'React JS', logo: '⚛️', category: 'Frontend' },
+    { name: 'TypeScript', logo: '📘', category: 'Frontend' },
+    { name: 'React-js', logo: '⚛️', category: 'Framework' },
     { name: 'jQuery', logo: '💫', category: 'Frontend' },
-    { name: 'AJAX', logo: '🔄', category: 'Frontend' },
+    { name: 'Bootstrap', logo: '🎯', category: 'Frontend' },
     { name: 'Node.js', logo: '🟢', category: 'Backend' },
     { name: 'Express.js', logo: '🚂', category: 'Backend' },
     { name: 'MongoDB', logo: '🍃', category: 'Database' },
     { name: 'SQL', logo: '🗄️', category: 'Database' },
-    { name: 'Bolt AI', logo: '🤖', category: 'Tools' },
-    { name: 'Vercel', logo: '▲', category: 'Deployment' },
-    { name: 'Netlify', logo: '🌊', category: 'Deployment' },
+    { name: 'Visual Studio Code', logo: '💻', category: 'Development Tools' },
+    { name: 'Visual Studio', logo: '🖥️', category: 'Development Tools' },
     { name: 'Git', logo: '📁', category: 'Version Control' },
-    { name: 'GitHub', logo: '🐱', category: 'Version Control' }
+    { name: 'GitHub', logo: '🐱', category: 'Version Control' },
+    { name: 'Figma', logo: '🎨', category: 'Design Tools' },
+    { name: 'Kony Visualizer', logo: '📱', category: 'Mobile Development' },
+    { name: 'Bolt AI', logo: '🤖', category: 'AI Tools' },
+    { name: 'Lovable', logo: '❤️', category: 'AI Tools' },
+    { name: 'Vercel', logo: '▲', category: 'Deployment' },
+    { name: 'Netlify', logo: '🌊', category: 'Deployment' }
   ];
 
-  const categories = ['Frontend', 'Backend', 'Database', 'Tools', 'Deployment', 'Version Control'];
+  const categories = ['Framework', 'Frontend', 'Backend', 'Database', 'Development Tools', 'Version Control', 'Design Tools', 'Mobile Development', 'AI Tools', 'Deployment'];
 
   return (
     <div className="courses-tech-stack">
@@ -67,7 +67,7 @@ const CoursesAndTechStack = () => {
         <div className="glass-card">
           <h2 className="page-title">Courses & Tech Stack</h2>
           <p className="page-description">
-            A comprehensive overview of my certifications, courses completed, and the technologies I work with.
+            A comprehensive overview of my certifications, courses completed, and the technologies I work with at Redcaso Solutions and ShoppersStop.
           </p>
         </div>
       </section>

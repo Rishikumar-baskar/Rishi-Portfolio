@@ -5,29 +5,29 @@ const Home = () => {
   const techStack = [
     { name: 'React', logo: '⚛️' },
     { name: 'JavaScript', logo: '🟨' },
+    { name: 'TypeScript', logo: '📘' },
     { name: 'Node.js', logo: '🟢' },
     { name: 'MongoDB', logo: '🍃' },
     { name: 'HTML', logo: '🔶' },
     { name: 'CSS', logo: '🎨' },
-    { name: 'Express', logo: '🚂' },
-    { name: 'Git', logo: '📁' }
+    { name: 'Express', logo: '🚂' }
   ];
 
   const projects = [
     {
-      name: 'NXT Project',
-      description: 'API management and documentation platform similar to Postman',
-      technologies: 'HTML, CSS, JavaScript'
+      name: 'NXT Platform',
+      description: 'API validation, performance assessment, and debugging platform for developers',
+      technologies: 'HTML, CSS, JavaScript, jQuery, AJAX'
     },
     {
-      name: 'QFC Mobile Application',
-      description: 'Mobile application for a finance insurance company in Qatar',
-      technologies: 'Kony Visualizer,Javascript'
+      name: 'QFC Client',
+      description: 'Digital banking application frontend for Android, iOS, and Web platforms',
+      technologies: 'Kony Visualizer, JavaScript, Kony Fabric'
     },
     {
-      name: 'ShopperStop (eCommerce Website)',
-      description: 'Full-stack eCommerce platform with payment integration',
-      technologies: 'MERN Stack, Stripe, Bootstrap'
+      name: 'ShoppersStop',
+      description: 'Full-stack eCommerce platform with MERN stack and payment integration',
+      technologies: 'MERN Stack, Stripe, Bootstrap, Redux'
     }
   ];
 
@@ -37,7 +37,7 @@ const Home = () => {
         <div className="glass-card hero-card">
           <h2 className="hero-title">Welcome to My Portfolio</h2>
           <p className="hero-description">
-            Full Stack Developer specializing in React.js with expertise in modern web technologies
+            React Developer with 2+ years of experience specializing in modern web technologies and full-stack development
           </p>
         </div>
       </section>
@@ -46,19 +46,19 @@ const Home = () => {
         <div className="glass-card">
           <h3 className="section-title">About Me</h3>
           <div className="about-content">
-            <p>Hello! I'm Rishi Kumar, a passionate React developer with extensive experience in full-stack web development.</p>
+            <p>Hello! I'm Rishi Kumar, a React Developer with 2+ years of experience at Redcaso Solutions. I specialize in HTML, CSS, JavaScript, TypeScript, and React Framework with strong UI design skills using Figma.</p>
             <div className="experience-grid">
               <div className="experience-item">
                 <h4>Experience</h4>
-                <p>2+ years as a developer</p>
+                <p>2+ years at Redcaso Solutions</p>
               </div>
               <div className="experience-item">
                 <h4>Education</h4>
-                <p>Electrical & Electronics Graduate with excellent academic performance</p>
+                <p>Bachelor of Engineering from St.Joseph's College of Engineering (GPA: 7.6)</p>
               </div>
               <div className="experience-item">
                 <h4>Specialization</h4>
-                <p>React.js Development & MERN Stack</p>
+                <p>React.js Development & Full-stack with MERN</p>
               </div>
             </div>
           </div>

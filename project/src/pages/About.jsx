@@ -3,33 +3,38 @@ import '../styles/About.css';
 
 const About = () => {
   const certifications = [
-    'Full Stack Web Development Certification',
-    'React.js Advanced Certification',
-    'JavaScript ES6+ Certification',
-    'Node.js Backend Development',
-    'MongoDB Database Management',
-    'Git & GitHub Version Control'
+    'Responsive Web Design using HTML5 + CSS3',
+    'Javascript Basic for beginners',
+    'Basics of Chrome developer tools',
+    'Plan and Execute better Software',
+    'Mern Stack(Full Stack) - Green Technologies'
   ];
 
   const fullStackTech = [
     { name: 'HTML', category: 'Frontend' },
     { name: 'CSS', category: 'Frontend' },
     { name: 'JavaScript', category: 'Frontend' },
-    { name: 'React JS', category: 'Frontend' },
+    { name: 'TypeScript', category: 'Frontend' },
+    { name: 'React-js', category: 'Frontend' },
     { name: 'jQuery', category: 'Frontend' },
-    { name: 'AJAX', category: 'Frontend' },
+    { name: 'Bootstrap', category: 'Frontend' },
     { name: 'Node.js', category: 'Backend' },
-    { name: 'MongoDB', category: 'Database' },
     { name: 'Express.js', category: 'Backend' },
+    { name: 'MongoDB', category: 'Database' },
     { name: 'SQL', category: 'Database' }
   ];
 
   const additionalTech = [
-    'Bolt AI',
-    'Vercel',
-    'Netlify',
+    'Visual Studio Code',
+    'Visual Studio',
     'Git',
-    'GitHub'
+    'GitHub',
+    'Figma',
+    'Kony Visualizer',
+    'Bolt AI',
+    'Lovable',
+    'Vercel',
+    'Netlify'
   ];
 
   return (
@@ -38,9 +43,9 @@ const About = () => {
         <div className="glass-card">
           <h2 className="page-title">About Rishi Kumar</h2>
           <p className="intro-text">
-            I'm a dedicated Full Stack Developer with a passion for creating innovative web solutions. 
-            My journey in software development spans over 3 years, during which I've honed my skills 
-            in modern web technologies and delivered high-quality applications.
+            React Developer with 2+ years of experience in Redcaso Solutions with HTML, CSS, JavaScript, TypeScript, React Framework. 
+            Strong UI design skills with Figma. Experienced in backend development and proficient with Bolt and Lovable AI tools. 
+            Further strengthened coding, problem-solving, and Full-stack development abilities for building scalable web applications.
           </p>
         </div>
       </section>
@@ -61,7 +66,7 @@ const About = () => {
 
       <section className="skills-section">
         <div className="glass-card">
-          <h3 className="section-title">Full Stack Technologies</h3>
+          <h3 className="section-title">Technical Skills</h3>
           <div className="skills-categories">
             {['Frontend', 'Backend', 'Database'].map(category => (
               <div key={category} className="skill-category">
@@ -81,7 +86,7 @@ const About = () => {
 
       <section className="additional-skills-section">
         <div className="glass-card">
-          <h3 className="section-title">Additional Knowledge</h3>
+          <h3 className="section-title">Development Tools & Platforms</h3>
           <div className="additional-skills">
             {additionalTech.map((tech, index) => (
               <div key={index} className="additional-skill">
