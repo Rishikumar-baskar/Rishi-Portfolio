@@ -28,20 +28,20 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 3px solid rgba(236, 72, 153, 0.5);
-  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+  border: 3px solid rgba(59, 130, 246, 0.5);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .avatar:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .portfolio-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ec4899;
+  color: #3b82f6;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   letter-spacing: -0.02em;
 }

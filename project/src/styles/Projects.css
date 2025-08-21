@@ -35,7 +35,7 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(236, 72, 153, 0.1);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.1);
 }
 
 .project-header {
@@ -46,7 +46,7 @@
 }
 
 .project-name {
-  color: #ec4899;
+  color: #3b82f6;
   font-size: 1.5rem;
   font-weight: 700;
   flex: 1;
@@ -61,8 +61,8 @@
 }
 
 .project-type {
-  background: rgba(244, 114, 182, 0.2);
-  color: #be185d;
+  background: rgba(96, 165, 250, 0.2);
+  color: #1d4ed8;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -91,7 +91,7 @@
 }
 
 .technologies-section h4, .features-section h4 {
-  color: #ec4899;
+  color: #3b82f6;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
@@ -103,8 +103,8 @@
 }
 
 .tech-tag {
-  background: rgba(236, 72, 153, 0.2);
-  color: #ec4899;
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
   padding: 0.4rem 0.9rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -126,7 +126,7 @@
 
 .features-list li:before {
   content: '✓';
-  color: #f472b6;
+  color: #60a5fa;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -147,7 +147,7 @@
 }
 
 .deployment-info strong {
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 .skills-summary {
@@ -170,7 +170,7 @@
 }
 
 .skill-area h4 {
-  color: #ec4899;
+  color: #3b82f6;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
