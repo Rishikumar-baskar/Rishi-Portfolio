@@ -7,6 +7,7 @@ import About from './pages/About';
 import CoursesAndTechStack from './pages/CoursesAndTechStack';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 import './styles/App.css';
 
 function App() {
@@ -16,13 +17,14 @@ function App() {
         <div className="background-gradient"></div>
         <Header />
         <Navigation />
-        <main className="main-content">
+        <main className="main-content animate-fadeIn">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/courses-tech-stack" element={<CoursesAndTechStack />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

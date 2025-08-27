@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
+import profileImage from "../Assets/Rishi.jpg";
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const techStack = [
     { name: 'React', logo: '⚛️' },
     { name: 'JavaScript', logo: '🟨' },
@@ -31,14 +38,45 @@ const Home = () => {
     }
   ];
 
+  const roles = ['React Developer', 'Full Stack Developer', 'UI/UX Enthusiast'];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="home">
       <section className="hero-section">
-        <div className="glass-card hero-card">
-          <h2 className="hero-title">Welcome to My Portfolio</h2>
-          <p className="hero-description">
-            React Developer with 2+ years of experience specializing in modern web technologies and full-stack development
-          </p>
+        <div className={`hero-card glass-card ${isVisible ? 'hero-visible' : ''}`}>
+          <div className="hero-content">
+            <div className="profile-container">
+              <img
+                src={profileImage}
+                alt="Rishi Kumar"
+                className="profile-image"
+                loading="lazy"
+              />
+            </div>
+            <div className="hero-text">
+              <h1 className="hero-name">Rishi Kumar</h1>
+              <div className="hero-role-container">
+                <span className="hero-role-text">I'm a </span>
+                <span className="hero-role">{roles[currentRoleIndex]}</span>
+              </div>
+              <p className="hero-description">
+                React Developer with 2+ years of experience specializing in modern web technologies and full-stack development
+              </p>
+              <div className="hero-buttons">
+                <a href="#projects" className="btn btn-primary">View My Work</a>
+                <a href="/resume" className="btn btn-secondary">Get Resume</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -91,6 +129,17 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section
+        className="parallax-section"
+        style={{backgroundImage: 'url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)'}}
+      >
+        <div className="parallax-overlay"></div>
+        <div className="parallax-content">
+          <h2>Creating Digital Experiences</h2>
+          <p>With a passion for clean code and innovative solutions, I transform ideas into engaging digital products.</p>
         </div>
       </section>
     </div>

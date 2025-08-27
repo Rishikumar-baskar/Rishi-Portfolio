@@ -10,7 +10,8 @@ const Navigation = () => {
     { path: '/about', label: 'About' },
     { path: '/courses-tech-stack', label: 'Courses & Tech Stack' },
     { path: '/projects', label: 'Projects' },
-    { path: '/resume', label: 'Resume' }
+    { path: '/resume', label: 'Resume' },
+    { path: '/contact', label: 'Contact' }
   ];
 
   return (

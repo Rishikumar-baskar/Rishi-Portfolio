@@ -40,28 +40,30 @@ const CoursesAndTechStack = () => {
   ];
 
   const techStackWithLogos = [
-    { name: 'HTML', logo: '🌐', category: 'Frontend' },
-    { name: 'CSS', logo: '🎨', category: 'Frontend' },
-    { name: 'JavaScript', logo: '⚡', category: 'Frontend' },
-    { name: 'TypeScript', logo: '📘', category: 'Frontend' },
-    { name: 'React-js', logo: '⚛️', category: 'Framework' },
-    { name: 'jQuery', logo: '💫', category: 'Frontend' },
-    { name: 'Bootstrap', logo: '🎯', category: 'Frontend' },
-    { name: 'Node.js', logo: '🟢', category: 'Backend' },
-    { name: 'Express.js', logo: '🚂', category: 'Backend' },
-    { name: 'MongoDB', logo: '🍃', category: 'Database' },
-    { name: 'SQL', logo: '🗄️', category: 'Database' },
-    { name: 'Visual Studio Code', logo: '💻', category: 'Development Tools' },
-    { name: 'Visual Studio', logo: '🖥️', category: 'Development Tools' },
-    { name: 'Cursor', logo: '🎯', category: 'Development Tools' },
-    { name: 'Git', logo: '📁', category: 'Version Control' },
-    { name: 'GitHub', logo: '🐱', category: 'Version Control' },
-    { name: 'Figma', logo: '🎨', category: 'Design Tools' },
-    { name: 'Kony Visualizer', logo: '📱', category: 'Mobile Development' },
-    { name: 'Bolt AI', logo: '🤖', category: 'AI Tools' },
-    { name: 'Lovable', logo: '❤️', category: 'AI Tools' },
-    { name: 'Vercel', logo: '▲', category: 'Deployment' },
-    { name: 'Netlify', logo: '🌊', category: 'Deployment' }
+    { name: 'HTML', logo: '🌐', category: 'Frontend', level: 90 },
+    { name: 'CSS', logo: '🎨', category: 'Frontend', level: 85 },
+    { name: 'JavaScript', logo: '⚡', category: 'Frontend', level: 90 },
+    { name: 'TypeScript', logo: '📘', category: 'Frontend', level: 80 },
+    { name: 'React-js', logo: '⚛️', category: 'Framework', level: 85 },
+    { name: 'jQuery', logo: '💫', category: 'Frontend', level: 75 },
+    { name: 'Bootstrap', logo: '🎯', category: 'Frontend', level: 80 },
+    { name: 'Node.js', logo: '🟢', category: 'Backend', level: 75 },
+    { name: 'Express.js', logo: '🚂', category: 'Backend', level: 70 },
+    { name: 'MongoDB', logo: '🍃', category: 'Database', level: 70 },
+    { name: 'SQL', logo: '🗄️', category: 'Database', level: 65 },
+    { name: 'Visual Studio Code', logo: '💻', category: 'Development Tools', level: 90 },
+    { name: 'Visual Studio', logo: '🖥️', category: 'Development Tools', level: 70 },
+    { name: 'Cursor', logo: '🎯', category: 'Development Tools', level: 75 },
+    { name: 'Git', logo: '📁', category: 'Version Control', level: 80 },
+    { name: 'GitHub', logo: '🐱', category: 'Version Control', level: 80 },
+    { name: 'Figma', logo: '🎨', category: 'Design Tools', level: 70 },
+    { name: 'Kony Visualizer', logo: '📱', category: 'Mobile Development', level: 65 },
+    { name: 'Bolt AI', logo: '🤖', category: 'AI Tools', level: 60 },
+    { name: 'Lovable', logo: '❤️', category: 'AI Tools', level: 60 },
+    { name: 'Cursor', logo: '🎯', category: 'AI Tools', level: 75 },
+
+    { name: 'Vercel', logo: '▲', category: 'Deployment', level: 75 },
+    { name: 'Netlify', logo: '🌊', category: 'Deployment', level: 75 }
   ];
 
   const categories = ['Framework', 'Frontend', 'Backend', 'Database', 'Development Tools', 'Version Control', 'Design Tools', 'Mobile Development', 'AI Tools', 'Deployment'];
@@ -86,9 +88,9 @@ const CoursesAndTechStack = () => {
                 <div className="cert-header">
                   <h4 className="cert-name">
                     {cert.certificateUrl ? (
-                      <a 
-                        href={cert.certificateUrl} 
-                        target="_blank" 
+                      <a
+                        href={cert.certificateUrl}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="cert-link"
                       >
@@ -126,6 +128,13 @@ const CoursesAndTechStack = () => {
                     <div key={index} className="tech-item-card">
                       <div className="tech-logo">{tech.logo}</div>
                       <span className="tech-name">{tech.name}</span>
+                      <div className="tech-level">
+                        <div
+                          className="tech-level-fill"
+                          style={{ width: `${tech.level}%` }}
+                        ></div>
+                      </div>
+                      <span className="tech-percent">{tech.level}%</span>
                     </div>
                   ))}
               </div>
