@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Projects.css';
+import mobile from '../Assets/mobileapp.avif';
+import web from '../Assets/webapp.avif';
+import ShoppersStop from '../Assets/ShoppersStop.png'
 
 const Projects = () => {
   const allProjects = [
@@ -22,7 +25,7 @@ const Projects = () => {
       company: 'Redcaso Solutions',
       duration: 'May 2023 - Present',
       location: 'Chennai',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: web
     },
     {
       id: 2,
@@ -42,7 +45,7 @@ const Projects = () => {
       company: 'Redcaso Solutions',
       duration: 'Apr 2024 - Present',
       location: 'Chennai',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e0404b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: mobile
     },
     {
       id: 3,
@@ -66,7 +69,7 @@ const Projects = () => {
       duration: 'May 2025 - Present',
       deployment: 'Final deployment in progress',
       versionControl: 'Git & GitHub',
-      image: 'https://images.unsplash.com/photo-1607082350899-7e105aa88605?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: ShoppersStop
     }
   ];
 
@@ -271,7 +274,7 @@ const Projects = () => {
 
       <section
         className="parallax-section"
-        style={{backgroundImage: 'url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)'}}
+        style={{backgroundImage: `url(${web})`}}
       >
         <div className="parallax-overlay"></div>
         <div className="parallax-content">

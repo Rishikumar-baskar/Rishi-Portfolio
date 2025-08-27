@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import profileImage from "../Assets/Rishi.jpg";
+import web from '../Assets/webapp.avif'
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -72,7 +73,7 @@ const Home = () => {
                 React Developer with 2+ years of experience specializing in modern web technologies and full-stack development
               </p>
               <div className="hero-buttons">
-                <a href="#projects" className="btn btn-primary">View My Work</a>
+                <a href="/projects" className="btn btn-primary">View My Work</a>
                 <a href="/resume" className="btn btn-secondary">Get Resume</a>
               </div>
             </div>
@@ -134,7 +135,7 @@ const Home = () => {
 
       <section
         className="parallax-section"
-        style={{backgroundImage: 'url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)'}}
+        style={{backgroundImage: `url(${web})`}}
       >
         <div className="parallax-overlay"></div>
         <div className="parallax-content">

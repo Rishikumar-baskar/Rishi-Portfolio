@@ -284,6 +284,11 @@
   color: white;
   text-align: center;
   margin: 3rem 0;
+  
+  /* Smooth blending with rest of the page */
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
 }
 
 .parallax-overlay {
@@ -292,7 +297,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  
+  /* Gradient overlay that blends into site background */
+  background: linear-gradient(
+    to bottom right,
+    rgba(30, 58, 138, 0.6),
+    rgba(59, 130, 246, 0.5)
+  );
+  backdrop-filter: blur(2px);
 }
 
 .parallax-content {
@@ -305,13 +317,28 @@
 .parallax-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 .parallax-content p {
   font-size: 1.2rem;
   color: #e2e8f0;
   margin-bottom: 2rem;
+}
+
+.parallax-content .btn-primary {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.parallax-content .btn-primary:hover {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
