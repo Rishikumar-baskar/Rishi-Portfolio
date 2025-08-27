@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -168,14 +169,14 @@ const Contact = () => {
                   <div className="contact-details">
                     <h4>{info.title}</h4>
                     
-                    <a
-                      href={info.link}
+                    <Link
+                      to={info.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="contact-link"
                     >
                       {info.value}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}

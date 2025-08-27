@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import profileImage from "../Assets/Rishi.jpg";
 import web from '../Assets/webapp.avif'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -73,8 +74,8 @@ const Home = () => {
                 React Developer with 2+ years of experience specializing in modern web technologies and full-stack development
               </p>
               <div className="hero-buttons">
-                <a href="/projects" className="btn btn-primary">View My Work</a>
-                <a href="/resume" className="btn btn-secondary">Get Resume</a>
+                <Link to="/projects" className="btn btn-primary">View My Work</Link>
+                <Link to="/resume" className="btn btn-secondary">Get Resume</Link>
               </div>
             </div>
           </div>

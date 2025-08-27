@@ -3,6 +3,7 @@ import '../styles/Projects.css';
 import mobile from '../Assets/mobileapp.avif';
 import web from '../Assets/webapp.avif';
 import ShoppersStop from '../Assets/ShoppersStop.png'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const allProjects = [
@@ -280,7 +281,7 @@ const Projects = () => {
         <div className="parallax-content">
           <h2>Ready to Start Your Project?</h2>
           <p>Let's work together to bring your ideas to life with cutting-edge technology and design.</p>
-          <a href="/contact" className="btn btn-primary">Get In Touch</a>
+          <Link to="/contact" className="btn btn-primary">Get In Touch</Link>
         </div>
       </section>
     </div>
