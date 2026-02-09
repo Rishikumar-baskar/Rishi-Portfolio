@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
-import profileImage from "../Assets/Rishi.jpg";
+import profileImage from "../Assets/Rishi.png";
 import web from '../Assets/webapp.avif'
 import { Link } from 'react-router-dom';
 
